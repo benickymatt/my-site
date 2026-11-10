@@ -1,0 +1,223 @@
+body {
+  margin: 0;
+  background-color: #F1F0E7;
+  color: #4E4C43;
+  font-family: "Source Sans 3", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+/*Centers text and images on scren*/
+.wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #4A5D4E;
+}
+
+p {
+  margin: 0 0 16px;
+}
+
+/*Headings*/
+h1, h2, h3 {
+  font-family: Verdana, Georgia, sans-serif;
+  color: #4E4C43;
+  line-height: 1.2;
+  margin: 0;
+}
+
+h1 {
+  font-size: 44px;
+}
+
+h2 {
+  font-size: 28px;
+  margin: 32px 0 24px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #8E9587;   /* thin line under each page title */
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+
+/*Heading design*/
+.site-header {
+  padding-top: 24px;
+}
+
+/*Centers heading content*/
+.site-header .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px 24px;
+}
+
+.contact {
+  font-style: normal;
+  font-size: 15px;
+  color: #5F6458;
+}
+
+.site-nav {
+  margin-top: 16px;
+  border-top: 1px solid #8E9587;
+  border-bottom: 1px solid #8E9587;
+}
+
+.site-nav ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0 24px;
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 24px;
+}
+
+.site-nav a {
+  display: block;
+  padding: 10px 0;
+  color: #4E4C43;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+}
+
+.site-nav a:hover {
+  border-bottom: 3px solid #8E9587;
+}
+
+/*Navigational identifier where the user is at*/
+.site-nav a[aria-current="page"] {
+  font-weight: bold;
+  border-bottom: 3px solid #4A5D4E;
+}
+
+/*Suggested accessibility option to prompt users to the top of the page who use the Tab button*/
+.skip-link {
+  position: absolute;
+  left: 16px;
+  top: -60px;
+  background-color: #4E4C43;
+  color: #F1F0E7;
+  padding: 8px 16px;
+}
+
+.skip-link:focus {
+  top: 8px;
+}
+
+/*Bottom of page design*/
+main {
+  padding-bottom: 40px;
+}
+
+.site-footer {
+  border-top: 1px solid #8E9587;
+  padding: 16px 0;
+  text-align: center;
+}
+
+/*Sectioned out boxes for Expertise page*/
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.card {
+  flex: 1 1 300px;
+  background-color: #F8F7F1;
+  border: 1px solid #D0CDC2;
+  border-radius: 6px;
+  padding: 24px;
+}
+
+/*Self image used on Home Page*/
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.about img {
+  width: 300px;
+  border: 1px solid #D0CDC2;
+  border-radius: 6px;
+}
+
+.about p {
+  flex: 1 1 300px;
+  font-size: 19px;
+}
+
+/*Formatting for Work Experience*/
+.entry {
+  margin-bottom: 40px;
+}
+
+.entry-meta {
+  color: #5F6458;
+}
+
+.entry ul {
+  max-width: 700px;
+}
+
+.entry li {
+  margin-bottom: 8px;
+}
+ 
+/*Formatting for Portfolio Examples*/
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.work {
+  flex: 1 1 400px;
+  background-color: #F8F7F1;
+  border: 1px solid #D0CDC2;
+  border-radius: 6px;
+  padding: 24px;
+}
+
+.work.featured {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+}
+
+.work.featured .work-media,
+.work.featured .work-body {
+  flex: 1 1 300px;
+}
+
+.work img {
+  border: 1px solid #D0CDC2;
+  border-radius: 6px;
+}
+
+/*Used to format two smaller logos*/
+.work img.logo {
+  width: 150px;
+  border: none;
+  margin-bottom: 16px;
+}
